@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RecipeFragment">
+
+
+    <TextView
+        android:id="@+id/recipetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/recipe"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="12dp" />
+
+    <View
+        android:id="@+id/dividerrecipe"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/recipetext"
+        android:background="?android:attr/listDivider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/dividerrecipe"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/recipesearchbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:weightSum="10"
+                >
+                <EditText
+                    android:id="@+id/searchrecipe"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border"
+                    android:layout_gravity="center"
+                    android:layout_weight="9.5"
+                    />
+                <Button
+                    android:id="@+id/searchrecipebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/search"
+                    android:textColor="#000000"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewreciperecom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/recoreci"
+                android:textSize="20sp"
+                android:background="#ffE08C"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginStart="30sp"
+                android:layout_margin="10dp"
+                android:padding="5dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewreciperecom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/morerecipetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+                <TextView
+                    android:id="@+id/textViewrecipemore"
+                    android:text="@string/morereci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="#ffE08C"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30sp"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"/>
+                <Button
+                    android:id="@+id/recipeaddbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addreci"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+
+                    />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recipelistview"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

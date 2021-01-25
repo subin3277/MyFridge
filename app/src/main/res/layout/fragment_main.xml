@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+
+    <TextView
+        android:id="@+id/maintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/myrefri"
+        android:textSize="35dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+       />
+
+    <View
+        android:id="@+id/dividermain"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/maintitle"
+        android:background="?android:attr/listDivider"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/dividermain"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textviewproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/dividermain"
+                android:layout_marginTop="15dp"
+                android:background="#FFE08C"
+                android:text="@string/producttouse"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="15dp"
+                tools:ignore="MissingConstraints"
+                android:layout_marginStart="15dp" />
+
+            <ListView
+                android:id="@+id/main_expir_listview"
+                android:layout_width="387dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/textviewlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="#FFE08C"
+                android:text="@string/mygrocery"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp" />
+
+            <ListView
+                android:id="@+id/main_refri_listview"
+                android:layout_width="390dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"/>
+<!--
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2"
+                >
+                <Button
+                    android:id="@+id/buttongocart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/putrefri"
+                    android:textSize="18sp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/buttonplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/putcart"
+                    android:textSize="18sp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+-->
+
+            <TextView
+                android:id="@+id/statetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="#FFE08C"
+                android:text="나의 냉장고"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/main_tembtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="냉장고 온/습도 확인하기"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/main_checkref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="현재 냉장고 확인하기"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="온도 :"
+                    android:textSize="18sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/main_temp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="습도 :"
+                    android:textSize="18sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/main_humidty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

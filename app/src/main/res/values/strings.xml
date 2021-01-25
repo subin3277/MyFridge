@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">냉장고야 부탁해</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account">나의 정보</string>
+    <string name="endaccount">완료하기</string>
+    <string name="grocerypick">관심 식재료</string>
+    <string name="nickname">닉네임*</string>
+    <string name="member">구성원 수</string>
+    <string name="recipecount">작성한 레시피</string>
+    <string name="commentcount">작성한 댓글</string>
+    <string name="groceryinfo">식재료 정보</string>
+    <string name="groceryname">식품 이름</string>
+    <string name="putrefri">냉장고에 넣기</string>
+    <string name="putcart">장바구니에 넣기</string>
+    <string name="purchasetip">구매 요령</string>
+    <string name="keeptime">보관 기한</string>
+    <string name="keepmeth">보관 방법</string>
+    <string name="maketip">조리 방법</string>
+    <string name="season">제철</string>
+    <string name="recipeadd">레시피 등록</string>
+    <string name="picadd">사진 등록</string>
+    <string name="title">제목</string>
+    <string name="time">소요 시간</string>
+    <string name="membertoeat">기준 인원</string>
+    <string name="level">난이도</string>
+    <string name="ingre">재료</string>
+    <string name="cookord">조리 순서</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="blank" />
+    <string name="foodname">음식 이름</string>
+    <string name="writer">작성자</string>
+    <string name="signup">회원 가입</string>
+    <string name="name">이름</string>
+    <string name="id">아이디</string>
+    <string name="password">비밀번호*</string>
+    <string name="passwordcheck">비밀번호 확인*</string>
+    <string name="email">이메일*</string>
+    <string name="accountset">수정하기</string>
+    <string name="cart">장바구니</string>
+    <string name="productname">상품명</string>
+    <string name="price">가격</string>
+    <string name="purchasedate">구매일</string>
+    <string name="keepdate">보관 남은일수</string>
+    <string name="myrefri">나의 냉장고</string>
+    <string name="producttouse">보관기한 임박 제품</string>
+    <string name="mygrocery">나의 식재료</string>
+    <string name="recipe">오늘의 레시피</string>
+    <string name="recoreci">추천 레시피</string>
+    <string name="morereci">더 많은 레시피</string>
+    <string name="addreci">레시피 등록</string>
+    <string name="title_activity_login">loginActivity</string>
+    <string name="prefLoginState">loginstate</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="login">LOGIN</string>
+    <string name="PASSWORD">PASSWORD</string>
+    <string name="ID">ID</string>
+    <string name="search">검색</string>
+    <string name="dosignup">회원가입 하기</string>
+    <string name="alwayslogin">자동 로그인</string>
+    <string name="vaildcheck">중복체크</string>
+    <string name="summary">한 줄 요약</string>
+    <string name="title_activity_a_ichatbot">AIchatbotActivity</string>
+
+    <string name="permission_1">[설정] > [권한] 에서 권한을 허용할 수 있습니다. </string>
+    <string name="permission_2">사진을 등록하기 위해서는 접근 권한이 필요합니다.</string>
+    <string name="title_activity_main_pop">MainPopActivity</string>
+    <string name="title_activity_example_addrecipe">ExampleAddrecipeActivity</string>
+</resources>

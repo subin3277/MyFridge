@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="구성원수">
+        <item> 1명 </item>
+        <item> 2명 </item>
+        <item> 3명 </item>
+        <item> 4명 </item>
+        <item> 5명 </item>
+        <item> 그이상 </item>
+    </string-array>
+
+    <string-array name="소요시간">
+        <item>5분 이내</item>
+        <item>10분 이내</item>
+        <item>15분 이내</item>
+        <item>30분 이내</item>
+        <item>1시간 이내</item>
+        <item>2시간 이내</item>
+        <item>2시간 이상</item>
+    </string-array>
+
+    <string-array name="난이도">
+        <item>누구나</item>
+        <item>초급</item>
+        <item>중급</item>
+        <item>고급</item>
+        <item>초고급</item>
+    </string-array>
+
+    <string-array name="재료카테고리">
+        <item>주재료</item>
+        <item>부재료</item>
+        <item>양념</item>
+    </string-array>
+</resources>

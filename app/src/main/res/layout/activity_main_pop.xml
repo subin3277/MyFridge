@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:padding="@dimen/box_inset_layout_padding"
+    android:layout_margin="50dp"
+    android:orientation="vertical"
+    tools:context=".MainPopActivity"
+    android:weightSum="100"
+    >
+
+    <ImageView
+        android:id="@+id/pop_refri_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="96"
+        android:layout_margin="15dp"
+        />
+
+    <Button
+        android:id="@+id/pop_refri_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="닫기"/>
+
+</LinearLayout>
